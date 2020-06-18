@@ -28,3 +28,6 @@ jobs:
     - name: Lint with pylint
       run: |
         find . -type f -iname "*main.py" -not -path "./.venv/*" | xargs pylint -f text -r y
+    - name: Mypy
+      run: |
+        find . -type f -iname "*main.py" -not -path "./.venv/*" | xargs mypy
