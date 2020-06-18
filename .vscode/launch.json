@@ -5,6 +5,25 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Python: argparse_main",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/argparse/argparse_main.py",
+      "cwd": "${workspaceFolder}/argparse",
+      "console": "integratedTerminal",
+      "args": [
+        "--id",
+        "10",
+        "--on",
+        "-c",
+        "test.csv",
+        "10",
+        "20",
+        "30",
+        "-rr"
+      ]
+    },
+    {
       "name": "Python: csv_main",
       "type": "python",
       "request": "launch",
